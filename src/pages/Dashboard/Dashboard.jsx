@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./Dashboard.module.css";
+import { useSelector } from "react-redux";
 
 const Dashboard = () => {
+  const user = useSelector((state) => state.auth.user);
+  console.log(user);
   return (
     <div className={styles.dashboardWrap}>
-      <h1>Hello Rushikesh</h1>
+      {user && <h1>Hello {user.name}</h1>}
       <div className={styles.tableWrap}>
         <div className={styles.tableArr}>
           <table>

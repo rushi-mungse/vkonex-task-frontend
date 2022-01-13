@@ -13,7 +13,7 @@ const Register = () => {
   const history = useHistory();
   const goToDashboard = async () => {
     if (!name && !password && !email) {
-      alert("All fields are required!");
+      return alert("All fields are required!");
     }
     const userInfo = {
       name,
@@ -22,6 +22,11 @@ const Register = () => {
     };
 
     const { data } = await register(userInfo);
+    // console.log(data);
+    if (!data.auth) {
+      return alert("This email already registerd!")
+    }
+
     dispatch(setAuth({ data }));
     history.push("/dashboard");
   };

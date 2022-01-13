@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import styles from './Navigation.module.css'
+import { useSelector } from 'react-redux'
 const Navigation = () => {
-
+    const user = useSelector(state => state.auth.user)
     return (
         <nav>
             <Link to='/' className={styles.brand}>
@@ -11,9 +12,9 @@ const Navigation = () => {
                 {/* <Link to='login'>
                     LogIn
                 </Link> */}
-                <Link to='register'>
+                {!user && <Link to='register'>
                     Register
-                </Link>
+                </Link>}
             </div>
         </nav>
     )
