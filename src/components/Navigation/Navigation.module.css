@@ -1,0 +1,45 @@
+/* @import url('../../css/variables.css'); */
+
+nav{
+    background: var(--dark);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+ nav .brand{
+    font-family: 'Nova Script', cursive;
+    font-size: 24px;
+    text-decoration:none;
+    font-weight: 400;
+    color: var(--success);
+    line-height: 29px;
+ }
+
+ nav .right{
+     color: var(--success);
+     font-size: 24px;
+     display: flex;
+     align-items: center;
+ }
+ nav .rightNav{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+ }
+ .rightNav a{
+    margin:0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--success);
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+ .rightNav a:hover{
+     color: var(--twitter);
+ }

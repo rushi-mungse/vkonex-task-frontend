@@ -1,0 +1,66 @@
+.registerWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerFrom{
+    margin-top: 4rem;
+    width: 500px;
+   display: flex; 
+   flex-direction: column;
+}
+.registerFrom h1{
+  color:var(--success);
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inputBox{
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.inputBox label{
+   color: var(--pure); 
+   font-size: 20px;
+   margin-right: 5px;
+}
+.inputBox input{
+    background: var(--ternary);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+    color: var(--pure);
+    outline: none;
+    margin-top: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.inputBox input::placeholder{
+    color: var(--pure);
+}
+
+button{
+    width: 80px;
+    margin: 0 auto;
+    background: var(--secondary);
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    color: var(--pure);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+}

@@ -1,0 +1,42 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeWrapper{
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.buttonWrapper{
+    color: var(--secondary);
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttonWrapper span{
+    color: var(--info);
+    font-weight: normal;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content h1{
+    color:var(--success);
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--pure);
+}
