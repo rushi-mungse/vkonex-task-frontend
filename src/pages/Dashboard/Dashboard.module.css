@@ -35,7 +35,12 @@ td {
   justify-content: center;
   border-right: 1px solid #fff;
 }
-
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
 .uploadFile label {
   background: var(--secondary);
   padding: 5px 10px;
@@ -43,9 +48,35 @@ td {
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
-  margin-top: 50px;
-  margin-left: 70px;
 }
 .uploadFile input {
   display: none;
+}
+.submit span{
+   background: var(--secondary);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.note{
+  color: var(--danger);
+  margin: 30px 40px;
+  font-size: 20px;
+}
+.dashboardPanel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.dashboardPanel button{
+  background: var(--secondary);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+  width: 100px;
 }

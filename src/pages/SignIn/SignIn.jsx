@@ -2,22 +2,26 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import styles from "./SignIn.module.css";
 import { login } from "../../http";
+import { useDispatch } from "react-redux";
+import { setAuth } from "../../store/slice/authSlice";
 
 const SignIn = () => {
+  const dispatch = useDispatch();
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const goToDashboard = async () => {
-    console.log(email, password);
     if (!email || !password) {
       return alert("All fields are required");
     }
+
     const userInfo = {
       email,
       password,
     };
+
     const { data } = await login(userInfo);
-    console.log(data);
+    dispatch(setAuth({ data }));
     history.push("dashboard");
   };
   return (
