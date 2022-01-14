@@ -12,5 +12,6 @@ const api = axios.create({
 export const register=(data)=>api.post('/api/register',data);
 export const login=(data)=>api.post('/api/login',data);
 export const setAndGetFile=(data)=>api.post('/api/getSetFile',data);
+export const allClients=()=>api.get('/api/allUsers');
 
 export default api

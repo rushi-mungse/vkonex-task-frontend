@@ -1,0 +1,9 @@
+.name{
+    cursor: pointer;
+    color: var(--twitter);
+}
+h1{
+    color: var(--success);
+    font-size: 20px;
+    margin: 20px 10px;
+}

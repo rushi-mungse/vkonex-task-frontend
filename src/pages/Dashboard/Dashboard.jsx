@@ -63,7 +63,7 @@ const history=useHistory();
                   <td>{data.userFiles.OriginalFileName}</td>
                   <td>
                     <a
-                      href={`http://localhost:5500${data.userFiles.files}`} target="_blank"
+                      href={`http://localhost:5500${data.userFiles.files}`} target="_blank" rel="noreferrer"
                     >Link</a>
                   </td>
                 </tr>

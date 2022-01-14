@@ -21,10 +21,9 @@ table {
 tr {
   display: grid;
   align-items: center;
-  width: 80%;
   grid-template-columns: repeat(3, 1fr);
   border: 1px solid #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
 tr th {
   border-right: 1px solid #fff;
@@ -34,6 +33,7 @@ td {
   align-items: center;
   justify-content: center;
   border-right: 1px solid #fff;
+  
 }
 .buttons{
   display: flex;
@@ -79,4 +79,9 @@ td {
   font-weight: bold;
   margin-left: 20px;
   width: 100px;
+}
+a{
+  color:var(--secondary);
+  font-size: 16px;
+  text-decoration: none;
 }
